@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Add a svg area, empty -->
+<svg id="dataviz_area" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+</head>
+<body>
+
+<h1>The script src attribute</h1>
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+<p id="demo"></p>
+
+
+<script type="text/javascript" src="Index.js"></script>
+
+<script>
+        var svg = d3.select("#dataviz_area")
+        svg.append("circle")
+          .attr("cx", 2).attr("cy", 2).attr("r", 40).style("fill", "blue");
+        svg.append("circle")
+          .attr("cx", 140).attr("cy", 70).attr("r", 40).style("fill", "red");
+        svg.append("circle")
+          .attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
+        </script>
+
+
+
+</body>
+</html>
+
